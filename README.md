@@ -35,3 +35,17 @@ airflow scheduler
 ```text
 This will start the webserver on port 8080 and the scheduler in the background. You can now access the Airflow web UI by opening a web browser and navigating to http://localhost:8080.
 ```
+## What is a DAG?
+```text
+A DAG (Directed Acyclic Graph) is a collection of tasks that you want to execute, organized in a way that reflects their dependencies and relationships. A DAG is a fundamental concept in Airflow, as it represents the workflow that you want to automate or orchestrate.
+
+A DAG consists of nodes and edges, where "nodes represent the tasks that need to be executed", and "edges represent the dependencies between tasks". The direction of the edges is always from upstream tasks to downstream tasks, indicating that a downstream task depends on the successful completion of its upstream tasks.
+```
+## An example of what is a DAG.
+
+<img width="319" alt="image" src="https://user-images.githubusercontent.com/47140557/222122501-143d5564-39c6-4b49-a791-e5c85c1c0af4.png">
+
+## An example of what is not a DAG.
+
+<img width="298" alt="image" src="https://user-images.githubusercontent.com/47140557/222123310-c5b152e9-285b-48d5-b170-0b7725ab39ab.png">
+
